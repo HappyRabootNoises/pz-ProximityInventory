@@ -145,7 +145,7 @@ function ProximityInventory.OnToggleForceSelected()
   local text = ProximityInventory.isForceSelected[playerNum]
       and getText("IGUI_ProxInv_Text_ForceSelectOn")
       or getText("IGUI_ProxInv_Text_ForceSelectOff")
-  HaloTextHelper.addText(player, text, HaloTextHelper.getColorWhite())
+      HaloTextHelper.addText(player, text, "", HaloTextHelper.getColorWhite())
 
   ISInventoryPage.dirtyUI() -- Let's force a reset of the UI
 end
